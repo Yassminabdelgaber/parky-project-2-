@@ -9,8 +9,9 @@
   --bg: #f3f5fb;
   --line: #e4e8f3;
 }
-
-* {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -18,11 +19,14 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 80px;
 }
 
 body {
   min-width: 320px;
-  display: block; /* يلغي ستايل Vite الافتراضي */
+  max-width: 100%;
+  overflow-x: hidden; /* بيمنع خروج أي عنصر عرضياً برة شاشة الموبايل */
+  display: block;
   font-family: "IBM Plex Sans Arabic", Tahoma, Arial, sans-serif;
   color: var(--navy);
   background: #fff;
