@@ -2049,3 +2049,14 @@ button.lang-btn {
     font-size: 12px;
   }
 }
+
+
+
+
+/* صورة المدخل على الموبايل */
+@media (max-width: 650px) {
+  .scene {
+    height: 230px;
+    background-position: 42% center;
+  }
+}
