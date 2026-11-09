@@ -447,7 +447,7 @@ a {
 }
 
 /* ============ RESPONSIVE ============ */
-@media (max-width: 900px) {
+@media (max-width: 1180px) {
   .navbar {
     padding: 12px 5%;
     flex-wrap: wrap;
@@ -1997,5 +1997,51 @@ button.lang-btn {
   .legal {
     flex-wrap: wrap;
     gap: 8px 18px;
+  }
+}
+
+
+
+/* HERO على الموبايل: صورة أطول وكارت أصغر عشان العربيات تبان */
+@media (max-width: 650px) {
+  .hero-visual {
+    height: 430px;
+  }
+
+  .dash-card {
+    top: 14px;
+    left: 14px;
+    right: 14px;
+    padding: 12px;
+  }
+
+  .dash-stats > div {
+    padding: 6px 8px;
+  }
+
+  .dash-stats strong {
+    font-size: 17px;
+  }
+
+  .dash-stats small {
+    font-size: 10px;
+    white-space: nowrap;
+  }
+
+  .dash-spots {
+    gap: 5px;
+    margin-top: 10px;
+  }
+
+  .dash-spots i {
+    height: 22px;
+  }
+
+  .dash-note {
+    left: 14px;
+    right: 14px;
+    bottom: 14px;
+    padding: 10px 14px;
+    font-size: 12px;
   }
 }
